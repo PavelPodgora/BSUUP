@@ -1,0 +1,17 @@
+commit 37b7f10f98cc1d6def3991290006214c8f41c606
+Author: Pavel Podoprigora <pavelqwerty1998@gmail.com>
+Date:   Thu Feb 8 19:38:01 2018 +0300
+
+    add log.txt
+
+commit 5df557d943b5327f94f683c064308b524ffbd136
+Author: Pavel Podoprigora <pavelqwerty1998@gmail.com>
+Date:   Thu Feb 8 18:32:58 2018 +0300
+
+    add status.txt
+
+commit 33b7f328ad0d55e6a5fa36910f80c19696d629e8
+Author: Pavel Podoprigora <pavelqwerty1998@gmail.com>
+Date:   Thu Feb 8 18:28:03 2018 +0300
+
+    add .gitignore
