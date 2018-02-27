@@ -50,34 +50,21 @@ header{
 }
 
 main{
+    //width: 100vw;
     height: 90vh;
     padding-top: 1vh;
 }
 
-.rectangle{
-    margin: 2%;
-    background-color: #4EB1BA;
-    float: right;
-    width: 21%;
-    height: auto;
-}
-
 .filter{
-    width: 100%;
-}
-
-.editForm{
-    text-align: center;
-    width: 100%;
-    float: left;
-    font-family: Poly;
-    font-size: 1em;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 7vh;
 }
 
 .filterName{
     border-style: none;
-    border-radius: 20px;
+    border-radius: 10px;
     box-shadow: 0 2px 1px #474143;
     background-color: #E7E8E7;
     outline: none;
@@ -85,33 +72,14 @@ main{
     color: #474143;
     text-indent: 4%;
     height: 5vh;
-    width: 20vw;
+    width: 30vw;
     margin: 2%;
 }
 
-.FotoBoxTop{
-    width: 25%;
-    padding: 3%;
-    height: auto;
-    margin: 1% 0 1% 2%;
-    float: left;
-    vertical-align: middle;
-    text-align: center;
-}
-.rectangleBoxTop{
-    background-color: #4EB1BA;
-    text-align: center;
-    display: flex;
-    width: 100%;
-    height: 80%;
-    display: inline-block;
-}
-
 .FotoBox{
-    //clear: left;
-    width: 12.3em;
+    width: 14.3em;
     height: auto;
-    margin: 1% 0 1% 2%;
+    margin: 1% 0 2% 2%;
     float: left;
     vertical-align: middle;
     text-align: center;
@@ -127,10 +95,9 @@ main{
     background-color: #4EB1BA;
     text-align: center;
     display: flex;
-    width: 12.22em;
+    width: 95%;
     height: 11em;
     display: inline-block;
-    //justify-content: center;
 }
 
 .foto{
@@ -146,21 +113,19 @@ main{
     display: inline-block;
 }
 
-.fa-heart, .fa-edit, .fa-delete{
-    font-size: 1.2em;
+.fa-heart, .fa-edit, .fa-thumbs-down, .fa-trash{
+    font-size: 1.5em;
     color: black;
-    padding: 1%;
+    padding: 2%;
 }
 
 .hashtags{
     width: 100%;
-    //height: 10%;
-    max-height: calc(22.22vw/5);
-    //margin-top: -1%;
+    max-height: calc(22.22vw/9);
     border-radius: 8px;
     box-shadow: 0 2px 1px #474143;
     background-color: #E7E8E7;
-    font-size: 0.8em;
+    font-size: 1em;
     text-align: left;
     overflow-y: hidden;
     display: flex;
@@ -181,28 +146,34 @@ main{
 
 footer{
     display: flex;
+    align-items: center;
     height: 20%;
     width: 100%;
     bottom: 0;
 }
 
 .footherBlock{
-    float: left;
+    //float: left;
     font-size: 1em;
     color: black;
-    font-family: Poly;
+    font-family: Poly,sans-serif;
 }
 
-.fas_fa-arrow-down{
-    margin: 5%;
+.fafafa{
     color: #4EB1BA;
+    margin-left: 28%;
 }
+ .fa-chevron-down{
+     font-size: 3em;
+     padding: 0 10%;
+     margin-left: 30%;
+ }
 
 .footherBack{
-    float: right;
     font-size: 1.2em;
-    font-family: Poly;
+    font-family: Poly,sans-serif;
     color: #F2F2F2;
+    margin-left: 25%;
 }
 
 @font-face {
@@ -212,121 +183,65 @@ footer{
 
 @media screen and (max-width: 960px) {
 
-    .rectangle {
-        margin: 2%;
-        background-color: #4EB1BA;
-        float: right;
-        width: 15%;
+    .FotoBox{
+        width: 12.3em;
         height: auto;
-    }
-
-    .filter {
-        width: 100%;
-    }
-
-    .editForm {
-        text-align: center;
-        width: 100%;
-        float: left;
-        font-family: Poly;
-        font-size: 1em;
-
-    }
-
-    .filterName {
-        border-style: none;
-        border-radius: 20px;
-        box-shadow: 0 2px 1px #474143;
-        background-color: #E7E8E7;
-        outline: none;
-        font-family: Roboto;
-        color: #474143;
-        text-indent: 4%;
-        height: 5vh;
-        width: 15vw;
-        margin: 2%;
-    }
-
-    .FotoBoxTop {
-        width: 20%;
-        padding: 3%;
-        height: auto;
-        margin: 1% 0 1% 2%;
+        margin: 1% 0 2% 2%;
         float: left;
         vertical-align: middle;
         text-align: center;
     }
 
-    .rectangleBoxTop {
-        background-color: #4EB1BA;
-        text-align: center;
-        display: flex;
-        width: 100%;
-        height: 80%;
-        display: inline-block;
-    }
-
-    .FotoBox {
-    / / clear: left;
-        width: 10.3em;
-        height: auto;
-        margin: 1% 0 1% 2%;
-        float: left;
-        vertical-align: middle;
-        text-align: center;
-    }
-
-    .FotoBox h2 {
-        font-size: 1em;
+    .FotoBox h2{
+        font-size: 0.8em;
         padding: 0.8%;
         margin-top: -1%;
     }
 
-    .rectangleBox {
+    .rectangleBox{
         background-color: #4EB1BA;
         text-align: center;
         display: flex;
-        width: 12.22em;
-        height: 11em;
+        width: 95%;
+        height: 9em;
         display: inline-block;
-    / / justify-content: center;
     }
 
-    .foto {
+    .foto{
         width: 80%;
         height: 70%;
         margin-top: -3%;
     }
 
-    .data {
+    .data{
         float: right;
         font-family: Roboto;
         margin-top: -5%;
         display: inline-block;
     }
 
-    .fa-heart, .fa-edit, .fa-delete {
-        font-size: 1.2em;
+    .fa-heart, .fa-edit, .fa-thumbs-down, .fa-trash{
+        font-size: 0.9em;
         color: black;
-        padding: 1%;
+        padding: 2%;
     }
 
-    .hashtags {
+    .hashtags{
         width: 100%;
-        max-height: calc(22.22vw / 5);
+        max-height: calc(22.22vw/11);
         border-radius: 8px;
         box-shadow: 0 2px 1px #474143;
         background-color: #E7E8E7;
-        font-size: 0.8em;
+        font-size: 0.9em;
         text-align: left;
         overflow-y: hidden;
         display: flex;
         justify-content: left;
     }
 
-    .comment {
+    .comment{
         width: 100%;
-        max-height: calc(22.22vw / 2);
+        max-height: calc(22.22vw/3);
         margin-top: 3%;
         border-radius: 8px;
         box-shadow: 0 2px 1px #474143;
@@ -335,138 +250,68 @@ footer{
         text-align: center;
         overflow-y: hidden;
     }
+
 }
 
 @media screen and (max-width: 480px) {
-    .Line {
-
-        height: 3vh;
-        width: 100vw;
-        background-color: #4EB1BA;
-    }
-
-    main {
-        height: 90vh;
-        padding-top: 1vh;
-    }
-
-    .rectangle {
-        margin: 2%;
-        background-color: #4EB1BA;
-        float: right;
-        width: 21%;
+    .FotoBox{
+        width: 10.3em;
         height: auto;
-    }
-
-    .filter {
-        width: 100%;
-    }
-
-    .editForm {
-        text-align: center;
-        width: 100%;
-        float: left;
-        font-family: Poly;
-        font-size: 1em;
-
-    }
-
-    .filterName {
-        border-style: none;
-        border-radius: 20px;
-        box-shadow: 0 2px 1px #474143;
-        background-color: #E7E8E7;
-        outline: none;
-        font-family: Roboto;
-        color: #474143;
-        text-indent: 4%;
-        height: 5vh;
-        width: 20vw;
-        margin: 2%;
-    }
-
-    .FotoBoxTop {
-        width: 25%;
-        padding: 3%;
-        height: auto;
-        margin: 1% 0 1% 2%;
+        margin: 1% 0 2% 2%;
         float: left;
         vertical-align: middle;
         text-align: center;
     }
 
-    .rectangleBoxTop {
-        background-color: #4EB1BA;
-        text-align: center;
-        display: flex;
-        width: 100%;
-        height: 80%;
-        display: inline-block;
-    }
-
-    .FotoBox {
-    / / clear: left;
-        width: 12.3em;
-        height: auto;
-        margin: 1% 0 1% 2%;
-        float: left;
-        vertical-align: middle;
-        text-align: center;
-    }
-
-    .FotoBox h2 {
-        font-size: 1em;
+    .FotoBox h2{
+        font-size: 0.6em;
         padding: 0.8%;
         margin-top: -1%;
     }
 
-    .rectangleBox {
+    .rectangleBox{
         background-color: #4EB1BA;
         text-align: center;
-        display: flex;
-        width: 12.22em;
-        height: 11em;
+        //display: flex;
+        width: 95%;
+        height: 8em;
         display: inline-block;
-    / / justify-content: center;
     }
 
-    .foto {
+    .foto{
         width: 80%;
         height: 70%;
         margin-top: -3%;
     }
 
-    .data {
+    .data{
         float: right;
-        font-family: Roboto;
         margin-top: -5%;
         display: inline-block;
     }
 
-    .fa-heart, .fa-edit, .fa-delete {
-        font-size: 1.2em;
+    .fa-heart, .fa-edit, .fa-thumbs-down, .fa-trash{
+        font-size: 0.7em;
         color: black;
-        padding: 1%;
+        padding: 2%;
     }
 
-    .hashtags {
+    .hashtags{
         width: 100%;
-    / / height: 10 %;
-        max-height: calc(22.22vw / 5);
-    / / margin-top: - 1 %;
+        max-height: calc(22.22vw/12);
         border-radius: 8px;
         box-shadow: 0 2px 1px #474143;
         background-color: #E7E8E7;
-        font-size: 0.8em;
+        font-size: 0.9em;
         text-align: left;
         overflow-y: hidden;
         display: flex;
         justify-content: left;
     }
 
-    .comment {
+    .comment{
         width: 100%;
-        max-height: calc(22.22vw / 2);
+        max-height: calc(22.22vw/4);
         margin-top: 3%;
         border-radius: 8px;
         box-shadow: 0 2px 1px #474143;
@@ -475,4 +320,5 @@ footer{
         text-align: center;
         overflow-y: hidden;
     }
+
 }
