@@ -145,9 +145,60 @@ var photoPost = [
             }
         }
     }
+
+    function removePhotoPost(id){
+        if(Number(id) > 20 || Number(id) < 1 || typeof id !== "string"){
+            return 0;
+        }
+        for(var i = 0;i<photoPost.length();i++){
+            if(photoPost[i].id == id){
+                delete photoPost[i].id;
+            }
+        }
+        return NaN;
+    }
+
+    function validPhotoPost(Post) {
+        if(typeof Post.id !== "string" ||
+        typeof Post.description !== "string" ||
+        typeof Post.createdAt !== "object" ||
+        typeof Post.author !== "string" ||
+        typeof Post.photoLink !== "string"){
+            return false;
+        }
+        for(var i = 0;i < Post.length;i++){
+            if(Post !== photoPost[i]){
+                return false;
+            }
+        }
+
+        if(Post.id < 1 || Post.id > 20){
+            return false;
+        }
+
+        if(Post.description > 300){
+            return false;
+        }
+
+        if(Post.author == ""){
+            return false;
+        }
+
+        if(Post.photoLink == ""){
+            return false;
+        }
+    }
+
+    function addPhotoPost(Post) {
+        if(validPhotoPost(Post)){
+            photoPost.push(Post);
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
 })
 
-function () {
-    function
-}
+
 
