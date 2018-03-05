@@ -201,7 +201,9 @@ var photoPost = [
         typeof Post.description !== "string" ||
         typeof Post.createdAt !== "object" ||
         typeof Post.author !== "string" ||
-        typeof Post.photoLink !== "string"){
+        typeof Post.photoLink !== "string" ||
+        typeof Post.hashtag !== "object" ||
+        typeof  Post.likes !== "object"){
             return false;
         }
         for(var i = 0;i < Post.length;i++){
@@ -225,6 +227,12 @@ var photoPost = [
         if(Post.photoLink == ""){
             return false;
         }
+
+        for(var i = o;i<Post.likes.length;i++){
+            if(Post.likes[i - 1] === Post.likes[i]){
+                return false;
+            }
+        }
     }
 
     function addPhotoPost(Post) {
@@ -235,6 +243,56 @@ var photoPost = [
         else {
             return false;
         }
+    }
+
+    function getPhotoPost(skip,top,filterConfig) {
+        if(typeof skip !== "number" || skip < 0){
+            skip = 0;
+        }
+
+        if(typeof top !== "number" || top < 0){
+            top = 10;
+        }
+
+        var filter = photoPost.sort(function (a, b) {
+            return b.createdAt - a.createdAt;
+        });
+
+        if(typeof filterConfig.createdAt === "object" && "createdAt" in filterConfig){
+            filter = filter.filter(function (item) {
+                return item.createdAt.getFullYear() === filterConfig.createdAt.getFullYear() &&
+                    item.createdAt.getMonth() === filterConfig.createdAt.getMonth() &&
+                    item.createdAt.getDay() === filterConfig.createdAt.getDay();
+            });
+        }
+
+        if(typeof filterConfig.author === "string" && "author" in filterConfig){
+            filter = filter.filter(function (item) {
+                return item.author == filterConfig.author;
+            });
+        }
+
+        return filter.slice(skip,skip + top);
+    }
+
+    function editPfotoPost(id,Post) {
+        var getPost = getPhotoPost(id);
+        if(!validPhotoPost(Post)){
+            return false;
+        }else{
+            if('description' in photoPost && photoPost.description.length <= 300 && photoPost.description.length > 0){
+                getPost.description = photoPost.description;
+            }
+
+            if('photoLink' in photoPost && photoPost.photoLink.length > 0){
+                getPost.photoLink = photoPost.photoLink;
+            }
+
+            if('hashtags' in photoPost && photoPost.hashtag.length > 0){
+                getPost.hashtag = photoPost.hashtag;
+            }
+        }
+
     }
 })
 
