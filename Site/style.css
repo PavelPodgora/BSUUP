@@ -120,10 +120,9 @@ main{
     box-shadow: 0 2px 1px #474143;
     background-color: #E7E8E7;
     font-size: 1em;
-    text-align: left;
     overflow-y: hidden;
     display: flex;
-    justify-content: left;
+    justify-content: center;
 }
 
 .comment{
@@ -147,7 +146,6 @@ footer{
 }
 
 .footherBlock{
-    //float: left;
     font-size: 1em;
     color: black;
     font-family: Poly,sans-serif;
@@ -247,73 +245,3 @@ footer{
     }
 
 }
-
-/*
-@media screen and (max-width: 480px) {
-    .FotoBox{
-        width: 8.3em;
-        height: auto;
-        margin: 1% 0 2% 2%;
-        float: left;
-        vertical-align: middle;
-        text-align: center;
-    }
-
-    .FotoBox h2{
-        font-size: 0.6em;
-        padding: 0.8%;
-        margin-top: -1%;
-    }
-
-    .rectangleBox{
-        background-color: #4EB1BA;
-        text-align: center;
-        width: 95%;
-        height: 8em;
-        display: inline-block;
-    }
-
-    .foto{
-        width: 80%;
-        height: 70%;
-        margin-top: -3%;
-    }
-
-    .data{
-        float: right;
-        margin-top: -5%;
-        display: inline-block;
-    }
-
-    .fa-heart, .fa-edit, .fa-thumbs-down, .fa-trash{
-        font-size: 0.7em;
-        color: black;
-        padding: 2%;
-    }
-
-    .hashtags{
-        width: 100%;
-        max-height: calc(22.22vw/12);
-        border-radius: 8px;
-        box-shadow: 0 2px 1px #474143;
-        background-color: #E7E8E7;
-        font-size: 0.9em;
-        text-align: left;
-        overflow-y: hidden;
-        display: flex;
-        justify-content: left;
-    }
-
-    .comment{
-        width: 100%;
-        max-height: calc(22.22vw/4);
-        margin-top: 3%;
-        border-radius: 8px;
-        box-shadow: 0 2px 1px #474143;
-        background-color: #E7E8E7;
-        font-size: 1em;
-        text-align: center;
-        overflow-y: hidden;
-    }
-
-}*/
