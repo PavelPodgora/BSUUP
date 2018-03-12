@@ -4,6 +4,7 @@ body{
     margin: 0;
     padding: 0;
 }
+
 header{
     display: flex;
     margin: 0;
@@ -13,12 +14,6 @@ header{
     font-family: Roboto,sans-serif;
 }
 
-.logo{
-    width: 45%;
-    height: 35%;
-    float: left;
-    margin: 20%;
-}
 
 .headerPortalname{
     font-family: Poly;
@@ -26,6 +21,7 @@ header{
     color: #F2F2F2;
     font-style: italic;
     font-size:1.3em;
+    margin-left: 1.5em;
 }
 
 .headerUsername{
@@ -39,18 +35,16 @@ header{
 .exit{
     height: 8vh;
     float: right;
-    margin-left: 18%;
+    margin-left: 20%;
 }
 
 .Line{
 
     height: 3vh;
-    width: 100vw;
     background-color: #4EB1BA;
 }
 
 main{
-    //width: 100vw;
     height: 90vh;
     padding-top: 1vh;
 }
@@ -72,7 +66,7 @@ main{
     color: #474143;
     text-indent: 4%;
     height: 5vh;
-    width: 30vw;
+    width: 25vw;
     margin: 2%;
 }
 
@@ -157,6 +151,7 @@ footer{
     font-size: 1em;
     color: black;
     font-family: Poly,sans-serif;
+    margin-left: 1.5em;
 }
 
 .fafafa{
@@ -184,7 +179,7 @@ footer{
 @media screen and (max-width: 960px) {
 
     .FotoBox{
-        width: 12.3em;
+        width: 11em;
         height: auto;
         margin: 1% 0 2% 2%;
         float: left;
@@ -193,7 +188,7 @@ footer{
     }
 
     .FotoBox h2{
-        font-size: 0.8em;
+        font-size: 0.9em;
         padding: 0.8%;
         margin-top: -1%;
     }
@@ -202,7 +197,7 @@ footer{
         background-color: #4EB1BA;
         text-align: center;
         display: flex;
-        width: 95%;
+        width: 85%;
         height: 9em;
         display: inline-block;
     }
@@ -228,8 +223,8 @@ footer{
 
     .hashtags{
         width: 100%;
-        max-height: calc(22.22vw/11);
-        border-radius: 8px;
+        max-height: calc(22.22vw/10);
+        border-radius: 7px;
         box-shadow: 0 2px 1px #474143;
         background-color: #E7E8E7;
         font-size: 0.9em;
@@ -253,9 +248,10 @@ footer{
 
 }
 
+/*
 @media screen and (max-width: 480px) {
     .FotoBox{
-        width: 10.3em;
+        width: 8.3em;
         height: auto;
         margin: 1% 0 2% 2%;
         float: left;
@@ -272,7 +268,6 @@ footer{
     .rectangleBox{
         background-color: #4EB1BA;
         text-align: center;
-        //display: flex;
         width: 95%;
         height: 8em;
         display: inline-block;
@@ -321,4 +316,4 @@ footer{
         overflow-y: hidden;
     }
 
-}
+}*/
