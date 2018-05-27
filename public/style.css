@@ -1,0 +1,272 @@
+body{
+    background-color: #222930;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    margin: 0;
+    align-items: center;
+    height: 10vh;
+    color: #4EB1BA;
+    font-family: Roboto,sans-serif;
+}
+
+
+.headerPortalname{
+    font-family: Poly;
+    width: 30vw;
+    color: #F2F2F2;
+    font-style: italic;
+    font-size:1.3em;
+    margin-left: 1.5em;
+}
+
+#headerUsername{
+    font-size: 0.7em;
+    float: right;
+    width: 15vw;
+    text-align: center;
+    margin-left: 20%;
+}
+
+/*.exit{
+    height: 8vh;
+    float: right;
+    margin-left: 20%;
+}*/
+
+.Line{
+    height: 3vh;
+    background-color: #4EB1BA;
+}
+
+
+.filter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 7vh;
+}
+
+.filterName{
+    border-style: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 1px #474143;
+    background-color: #E7E8E7;
+    outline: none;
+    font-family: Roboto;
+    color: #474143;
+    text-indent: 4%;
+    height: 5vh;
+    width: 25vw;
+    margin: 2%;
+}
+
+main{
+    height: 90vh;
+    padding-top: 1vh;
+}
+
+.FotoBox{
+    width: 14.3em;
+    height: auto;
+    margin: 1% 0 2% 2%;
+    float: left;
+
+}
+
+.post{
+    text-align: center;
+    margin-right: -15px;
+}
+
+
+.rectangleBox{
+    background-color: #4EB1BA;
+    text-align: center;
+    width: 32em;
+    height: 22em;
+    display: inline-block;
+    margin: 4%;
+}
+
+.foto img{
+    display: inline-block;
+    width: 80%;
+    height: 80%;
+    margin-top: 2%;
+}
+
+.data{
+    float: right;
+    font-family: Roboto;
+    margin-top: -5%;
+    display: inline-block;
+}
+
+.fa-sign-in-alt{
+    font-size: 2em;
+    float: right;
+    margin-left: 20%;
+}
+.fa-heart, .fa-edit, .fa-thumbs-down, .fa-trash{
+    font-size: 1.5em;
+    color: black;
+    padding: 2%;
+}
+
+.hashtag{
+    width: 90%;
+    max-height: calc(22.22vw/9);
+    border-radius: 8px;
+    box-shadow: 0 2px 1px #474143;
+    background-color: #E7E8E7;
+    font-size: 1em;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    margin-left: 15px;
+}
+
+.description{
+    width: 90%;
+    max-height: calc(22.22vw/2);
+    margin: 1%;
+    margin-left: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 1px #474143;
+    background-color: #E7E8E7;
+    font-size: 1em;
+    text-align: center;
+    overflow-y: hidden;
+}
+
+
+footer{
+    display: flex;
+    align-items: center;
+    height: 20%;
+    width: 100%;
+    bottom: 0;
+}
+
+ nav{
+    float: right;
+}
+
+.menu{
+    display: block;
+    margin: 0;
+}
+
+.menu li{
+    float: left;
+    display: block;
+    margin-top: 30px;
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.footherBlock{
+    font-size: 1em;
+    color: black;
+    font-family: Poly,sans-serif;
+    margin-left: 1.5em;
+}
+
+.fafafa{
+    color: #4EB1BA;
+    margin-left: 28%;
+}
+ .fa-chevron-down{
+     font-size: 3em;
+     padding: 0 10%;
+     margin-left: 30%;
+ }
+
+.footherBack{
+    font-size: 1.2em;
+    font-family: Poly,sans-serif;
+    color: #F2F2F2;
+    margin-left: 25%;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("fonts/3966.ttf");
+}
+
+@media screen and (max-width: 960px) {
+
+    .FotoBox{
+        width: 11em;
+        height: auto;
+        margin: 1% 0 2% 2%;
+        float: left;
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    .FotoBox h2{
+        font-size: 0.9em;
+        padding: 0.8%;
+        margin-top: -1%;
+    }
+
+    .rectangleBox{
+        background-color: #4EB1BA;
+        text-align: center;
+        display: flex;
+        width: 85%;
+        height: 9em;
+        display: inline-block;
+    }
+
+    .foto{
+        width: 80%;
+        height: 70%;
+        margin-top: -3%;
+    }
+
+    .data{
+        float: right;
+        font-family: Roboto;
+        margin-top: -5%;
+        display: inline-block;
+    }
+
+    .fa-heart, .fa-edit, .fa-thumbs-down, .fa-trash{
+        font-size: 0.9em;
+        color: black;
+        padding: 2%;
+    }
+
+    .hashtags{
+        width: 100%;
+        max-height: calc(22.22vw/10);
+        border-radius: 7px;
+        box-shadow: 0 2px 1px #474143;
+        background-color: #E7E8E7;
+        font-size: 0.9em;
+        text-align: left;
+        overflow-y: hidden;
+        display: flex;
+        justify-content: left;
+    }
+
+    .comment{
+        width: 100%;
+        max-height: calc(22.22vw/3);
+        margin-top: 3%;
+        border-radius: 8px;
+        box-shadow: 0 2px 1px #474143;
+        background-color: #E7E8E7;
+        font-size: 1em;
+        text-align: center;
+        overflow-y: hidden;
+    }
+
+}

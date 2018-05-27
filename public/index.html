@@ -10,19 +10,12 @@
 </head>
 
 <body>
-        <script src="script.js"></script>
 
         <header class = "header">
 
             <div class="headerPortalname">
                 <h1>Isithombe</h1>
             </div>
-
-            <div id="headerUsername">
-                <!--<a><h1>Pavel Podoprigora</h1></a>-->
-            </div>
-
-            <img src="img/Logout-512.png" alt="logout" class="exit">
 
         </header>
 
@@ -34,331 +27,22 @@
         <main>
 
                 <form class="filter" autocomplete="on">
-                    <input type="text" name="username" value="Username" spellcheck="false" onblur="if(this.value==''){this.value='Enter Username';}" onfocus="if(this.value=='Enter Username'){this.value='';}" class="filterName">
-                    <input type="text" name="data" value="Enter Data(Format:dd.mm.yy)" spellcheck="false" onblur="if(this.value==''){this.value='Enter Data';}" onfocus="if(this.value=='Enter Data'){this.value='';}" class="filterName">
-                    <input type="text" name="hashtags" value="Enter Hashtegs" spellcheck="false" onblur="if(this.value==''){this.value='Enter Hashtags';}" onfocus="if(this.value=='Enter Hashtags'){this.value='';}" class="filterName">
+                    <input type="text" list="name" placeholder="Username" class="filterName">
+                    <datalist id="name">
+                    </datalist>
 
+                    <input type="text" list="data" placeholder="Enter Data(Format:dd.mm.yy)"  class="filterName">
+                    <datalist id="data">
+                    </datalist>
+
+                    <input type="text" list="hashtags" placeholder="Enter Hashtegs"  class="filterName">
+                    <datalist id="hashtags">
+                    </datalist>
                 </form>
 
-           <!-- <div class="FotoBox">
-                <div class="rectangleBox">
-                    <h2>Pavel Podoprigora</h2>
-                    <img src="img/foto.jpg" class ="foto">
-                    <div class="data">
-                        <p>
-                            12.02.2018
-                        </p>
-                    </div>
-
-                </div>
-
-                <a href="#"><i class="fas fa-heart"></i></a>
-                <a href="#"><i class="fas fa-thumbs-down"></i></a>
-                <a href="#"><i class="fas fa-edit"></i></a>
-                <a href="#"><i class="fas fa-trash"></i></a>
-
-
-                <div class="hashtags">
-                    <p>
-                        #ram
-                    </p>
-                </div>
-
-                <div class="comment">
-                    <p>
-                        Who invented this???
-                    </p>
-                </div>
+            <div class="FotoBox">
 
             </div>
-
-            <div class="FotoBox">
-                <div class="rectangleBox">
-                    <h2>Pavel Podoprigora</h2>
-                    <img src="img/foto.jpg" class ="foto">
-                    <div class="data">
-                        <p>
-                            12.02.2018
-                        </p>
-                    </div>
-
-                </div>
-
-                <a href="#"><i class="fas fa-heart"></i></a>
-                <a href="#"><i class="fas fa-thumbs-down"></i></a>
-                <a href="#"><i class="fas fa-edit"></i></a>
-                <a href="#"><i class="fas fa-trash"></i></a>
-
-
-                <div class="hashtags">
-                    <p>
-                        #ram
-                    </p>
-                </div>
-
-                <div class="comment">
-                    <p>
-                        Who invented this???
-                    </p>
-                </div>
-
-            </div>
-
-            <div class="FotoBox">
-                <div class="rectangleBox">
-                    <h2>Pavel Podoprigora</h2>
-                    <img src="img/foto.jpg" class ="foto">
-                    <div class="data">
-                        <p>
-                            12.02.2018
-                        </p>
-                    </div>
-
-                </div>
-
-                <a href="#"><i class="fas fa-heart"></i></a>
-                <a href="#"><i class="fas fa-thumbs-down"></i></a>
-                <a href="#"><i class="fas fa-edit"></i></a>
-                <a href="#"><i class="fas fa-trash"></i></a>
-
-
-                <div class="hashtags">
-                    <p>
-                        #ram,#Ric
-                    </p>
-                </div>
-
-                <div class="comment">
-                    <p>
-                        Who invented this???
-                    </p>
-                </div>
-
-            </div>
-
-            <div class="FotoBox">
-                <div class="rectangleBox">
-                    <h2>Pavel Podoprigora</h2>
-                    <img src="img/foto.jpg" class ="foto">
-                    <div class="data">
-                        <p>
-                            12.02.2018
-                        </p>
-                    </div>
-
-                </div>
-
-                <a href="#"><i class="fas fa-heart"></i></a>
-                <a href="#"><i class="fas fa-thumbs-down"></i></a>
-                <a href="#"><i class="fas fa-edit"></i></a>
-                <a href="#"><i class="fas fa-trash"></i></a>
-
-
-                <div class="hashtags">
-                    <p>
-                        #ram
-                    </p>
-                </div>
-
-                <div class="comment">
-                    <p>
-                        Who invented this???
-                    </p>
-                </div>
-
-            </div>
-
-            <div class="FotoBox">
-                <div class="rectangleBox">
-                    <h2>Pavel Podoprigora</h2>
-                    <img src="img/foto.jpg" class ="foto">
-                    <div class="data">
-                        <p>
-                            12:30\12.02.2018
-                        </p>
-                    </div>
-
-                </div>
-
-                <a href="#"><i class="fas fa-heart"></i></a>
-                <a href="#"><i class="fas fa-thumbs-down"></i></a>
-                <a href="#"><i class="fas fa-edit"></i></a>
-                <a href="#"><i class="fas fa-trash"></i></a>
-
-
-                <div class="hashtags">
-                    <p>
-                        #ram
-                    </p>
-                </div>
-
-                <div class="comment">
-                    <p>
-                        Who invented this???
-                    </p>
-                </div>
-
-            </div>
-
-            <div class="FotoBox">
-                <div class="rectangleBox">
-                    <h2>Pavel Podoprigora</h2>
-                    <img src="img/foto.jpg" class ="foto">
-                    <div class="data">
-                        <p>
-                            12.02.2018
-                        </p>
-                    </div>
-
-                </div>
-
-                <a href="#"><i class="fas fa-heart"></i></a>
-                <a href="#"><i class="fas fa-thumbs-down"></i></a>
-                <a href="#"><i class="fas fa-edit"></i></a>
-                <a href="#"><i class="fas fa-trash"></i></a>
-
-
-                <div class="hashtags">
-                    <p>
-                        #ram
-                    </p>
-                </div>
-
-                <div class="comment">
-                    <p>
-                        Who invented this???
-                    </p>
-                </div>
-
-            </div>
-
-            <div class="FotoBox">
-                <div class="rectangleBox">
-                    <h2>Pavel Podoprigora</h2>
-                    <img src="img/foto.jpg" class ="foto">
-                    <div class="data">
-                        <p>
-                            12.02.2018
-                        </p>
-                    </div>
-
-                </div>
-
-                <a href="#"><i class="fas fa-heart"></i></a>
-                <a href="#"><i class="fas fa-thumbs-down"></i></a>
-                <a href="#"><i class="fas fa-edit"></i></a>
-                <a href="#"><i class="fas fa-trash"></i></a>
-
-
-                <div class="hashtags">
-                    <p>
-                        #ram
-                    </p>
-                </div>
-
-                <div class="comment">
-                    <p>
-                        Who invented this???
-                    </p>
-                </div>
-
-            </div>
-
-            <div class="FotoBox">
-                <div class="rectangleBox">
-                    <h2>Pavel Podoprigora</h2>
-                    <img src="img/foto.jpg" class ="foto">
-                    <div class="data">
-                        <p>
-                            12.02.2018
-                        </p>
-                    </div>
-
-                </div>
-
-                <a href="#"><i class="fas fa-heart"></i></a>
-                <a href="#"><i class="fas fa-thumbs-down"></i></a>
-                <a href="#"><i class="fas fa-edit"></i></a>
-                <a href="#"><i class="fas fa-trash"></i></a>
-
-
-                <div class="hashtags">
-                    <p>
-                        #ram
-                    </p>
-                </div>
-
-                <div class="comment">
-                    <p>
-                        Who invented this???
-                    </p>
-                </div>
-
-            </div>
-
-            <div class="FotoBox">
-                <div class="rectangleBox">
-                    <h2>Pavel Podoprigora</h2>
-                    <img src="img/foto.jpg" class ="foto">
-                    <div class="data">
-                        <p>
-                            12.02.2018
-                        </p>
-                    </div>
-
-                </div>
-
-                <a href="#"><i class="fas fa-heart"></i></a>
-                <a href="#"><i class="fas fa-thumbs-down"></i></a>
-                <a href="#"><i class="fas fa-edit"></i></a>
-                <a href="#"><i class="fas fa-trash"></i></a>
-
-
-                <div class="hashtags">
-                    <p>
-                        #ram
-                    </p>
-                </div>
-
-                <div class="comment">
-                    <p>
-                        Who invented this???
-                    </p>
-                </div>
-
-            </div>
-
-            <div class="FotoBox">
-                <div class="rectangleBox">
-                    <h2>Pavel Podoprigora</h2>
-                    <img src="img/foto.jpg" class ="foto">
-                    <div class="data">
-                        <p>
-                            12:30\12.02.2018
-                        </p>
-                    </div>
-
-                </div>
-
-                <a href="#"><i class="fas fa-heart"></i></a>
-                <a href="#"><i class="fas fa-thumbs-down"></i></a>
-                <a href="#"><i class="fas fa-edit"></i></a>
-                <a href="#"><i class="fas fa-trash"></i></a>
-
-
-                <div class="hashtags">
-                    <p>
-                        #ram
-                    </p>
-                </div>
-
-                <div class="comment">
-                    <p>
-                        Who invented this???
-                    </p>
-                </div>
-
-            </div>-->
         </main>
 
         <footer class= "footer">
@@ -374,6 +58,7 @@
             </div>
         </footer>
 
+        <script src="script.js"></script>
+        <script src="DOM.js"></script>
 </body>
-    <script src="DOM.js"></script>
 </html>
