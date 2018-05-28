@@ -53,7 +53,7 @@ let dom = (function () {
 
     let authUser = function ( ) {
         if(user){
-            let hed = document.getElementsByClassName('container1');
+            let hed = document.getElementsByClassName('header');
             let pageSettings = document.createElement('nav');
             let menu = document.createElement('ul');
             menu.className = 'menu';
@@ -75,7 +75,7 @@ let dom = (function () {
 
             let liOut = document.createElement('li');
             let buttonOut = document.createElement('i');
-            buttonLogout.className = 'fas fa-sign-out-alt';
+            buttonOut.className = 'fas fa-sign-out-alt';
             liOut.appendChild(buttonOut);
             menu.appendChild(liOut);
 
@@ -124,37 +124,29 @@ let dom = (function () {
 
     let likePhoto = function(id) {
         let post = document.getElementById(id);
-        let like = post.getElementsByClassName('fas fa-heart');
-        like[0].style.color = '#ff0000';
+        if(post != null){
+            let like = post.getElementsByClassName('fas fa-heart');
+            like[0].style.color = '#ff0000';
+        }
     }
 
     let unLikePhoto = function (id) {
         let post = document.getElementById(id);
-        let unLike = post.getElementsByClassName('fas fa-heart');
-        unLike[0].style.color = '#000000';
+        if(post != null) {
+            let unLike = post.getElementsByClassName('fas fa-heart');
+            unLike[0].style.color = '#000000';
+        }
     }
 
-/*    let dislikePhoto = function(id) {
-        let post = document.getElementById(id);
-        let like = post.getElementsByClassName('fas fa-thumbs-down');
-        like[0].style.color = '#0a00ff';
-    }
-
-    let undisLikePhoto = function (id) {
-        let post = document.getElementById(id);
-        let unLike = post.getElementsByClassName('fas fa-thumbs-down');
-        unLike[0].style.color = '#000000';
-    }*/
 
     let filterHashtags = function () {
         let dataUsers = document.getElementById('hashtags');
         let setHashtags = new Set();
         photoPosts.forEach(function (item) {
-            item.hashtags.forEach(function (hashtag) {
+            item.hashtags.forEach(function (hashtags) {
                 setHashtags.add(hashtag);
             });
         });
-
         setHashtags.forEach(function (item) {
             let hashtag = document.createElement('option');
             hashtag.value = item;
@@ -234,6 +226,6 @@ editPhotoPost('17', {author: '1234567777'});
 
 authUser();
 like('19');
-dom.filterHashtags();
+//dom.filterHashtags();
 dom.filterUsers();
 console.log(photoPosts);

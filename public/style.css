@@ -6,12 +6,13 @@ body{
 }
 
 header{
-    display: flex;
+    display: inline-block;
     margin: 0;
-    align-items: center;
+    /*align-items: center;*/
     height: 10vh;
     color: #4EB1BA;
     font-family: Roboto,sans-serif;
+    margin-left: 50%;
 }
 
 
@@ -21,8 +22,10 @@ header{
     color: #F2F2F2;
     font-style: italic;
     font-size:1.3em;
-    margin-left: 1.5em;
+    /*margin-left: 1.5em;*/
+    float: left;
 }
+
 
 #headerUsername{
     font-size: 0.7em;
@@ -32,11 +35,11 @@ header{
     margin-left: 20%;
 }
 
-/*.exit{
-    height: 8vh;
-    float: right;
-    margin-left: 20%;
-}*/
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    height: 600px;
+}
 
 .Line{
     height: 3vh;
@@ -70,12 +73,32 @@ main{
     padding-top: 1vh;
 }
 
-.FotoBox{
-    width: 14.3em;
-    height: auto;
-    margin: 1% 0 2% 2%;
-    float: left;
+nav{
+    float: right;
 
+}
+
+.menu{
+    display: block;
+    margin: 0;
+}
+
+.menu li{
+    float: left;
+    display: block;
+    margin-top: 30px;
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.FotoBox{
+    /*width: 14.3em;*/
+    width: 100%;
+    height: auto;
+    margin: 1% 2% 1% 10%;
+    float: left;
+    /*display: flex;*/
 }
 
 .post{
@@ -90,7 +113,7 @@ main{
     width: 32em;
     height: 22em;
     display: inline-block;
-    margin: 4%;
+    margin: 3%;
 }
 
 .foto img{
@@ -107,16 +130,12 @@ main{
     display: inline-block;
 }
 
-.fa-sign-in-alt{
-    font-size: 2em;
-    float: right;
-    margin-left: 20%;
-}
-.fa-heart, .fa-edit, .fa-thumbs-down, .fa-trash{
+.fa-edit, .fa-trash, .fa-heart{
     font-size: 1.5em;
-    color: black;
     padding: 2%;
+    margin-top: 2%;
 }
+
 
 .hashtag{
     width: 90%;
@@ -153,23 +172,6 @@ footer{
     bottom: 0;
 }
 
- nav{
-    float: right;
-}
-
-.menu{
-    display: block;
-    margin: 0;
-}
-
-.menu li{
-    float: left;
-    display: block;
-    margin-top: 30px;
-    text-decoration: none;
-    margin-right: 15px;
-    font-size: 25px;
-}
 .footherBlock{
     font-size: 1em;
     color: black;
